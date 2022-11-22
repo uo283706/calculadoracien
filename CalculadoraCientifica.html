@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!--Datos que describen el documento-->
+    <meta charset="UTF-8">
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Sara Lamuño" >
+    <meta name ="description" content ="Página principal de la calculadora" >
+    <meta name ="keywords" content ="Calculadora, más, menos, por,entre,exp,pot,sin,cos,tan" >
+
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" >
+
+    <script src = "CalculadoraCientifica.js" ></script>
+
+    <title>Calculadora Científica</title>
+    <!--Añadir el elemento link de enlace a la hoja de estilo dento del <head> del documento html-->
+   
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css">
+
+</head>
+<body>
+    
+    <h1>Calculadora Científica</h1>
+        <form>
+
+            <label for="pantalla">nata by MILAN</label>
+            <input type="text" name="pantalla" id="pantalla" value="" lang="es" disabled>
+            
+            <input type="button" value="DEG" onclick="calculadoraM.DEG()" />
+            <input type="button" value="sft" onclick="calculadoraM.sft()" />
+            <input type="button" value="MC" onclick="calculadoraM.mc()" />
+            <input type="button" value="MR" onclick="calculadoraM.mr()" />
+
+            <input type="button" value="CE" onclick="calculadoraM.CE()" />
+            <input type="button" value="C" onclick="calculadoraM.borrar()" />
+            <input type="button" value="-x-" onclick="calculadoraM.borrarUno()" />
+            <input type="button" value="%" onclick="calculadoraM.modulo()" />
+
+            <input type="button" value="x^2" onclick="calculadoraM.pot2()" />
+            <input type="button" value="10^x" onclick="calculadoraM.pot10()" />
+            <input type="button" value="x^y" onclick="calculadoraM.pot()" />
+            <input type="button" value="+-" onclick="calculadoraM.masmenos()" />
+            
+            <input type="button" value="sin" onclick="calculadoraM.sin()" />
+            <input type="button" value="cos" onclick="calculadoraM.cos()" />
+            <input type="button" value="tan" onclick="calculadoraM.tan()" />
+            <input type="button" value="√" onclick="calculadoraM.raíz()" />
+            
+            <input type="button" value="7" onclick="calculadoraM.num(7)" />
+            <input type="button" value="8" onclick="calculadoraM.num(8)" />
+            <input type="button" value="9" onclick="calculadoraM.num(9)" />
+            <input type="button" value="*" onclick="calculadoraM.mult()" />
+
+            <input type="button" value="4" onclick="calculadoraM.num(4)" />
+            <input type="button" value="5" onclick="calculadoraM.num(5)" />
+            <input type="button" value="6" onclick="calculadoraM.num(6)" />
+            <input type="button" value="-" onclick="calculadoraM.resta()" />
+
+            <input type="button" value="1" onclick="calculadoraM.num(1)" />
+            <input type="button" value="2" onclick="calculadoraM.num(2)" />
+            <input type="button" value="3" onclick="calculadoraM.num(3)" />
+            <input type="button" value="+" onclick="calculadoraM.suma()" />
+            
+
+            <input type="button" value="0" onclick="calculadoraM.num(0)" />
+            <input type="button" value="!" onclick="calculadoraM.factorial()" />
+            <input type="button" value="pi" onclick="calculadoraM.pi()" />
+            <input type="button" value="/" onclick="calculadoraM.div()" />
+
+            <input type="button" value="log" onclick="calculadoraM.log()" />
+            <input type="button" value="exp" onclick="calculadoraM.exp()" />
+            <input type="button" value="." onclick="calculadoraM.punto()" />
+            <input type="button" value="=" onclick="calculadoraM.equals()" />
+            
+            <input type="button" value="(" onclick="calculadoraM.abreParentesis()" />
+            <input type="button" value=")" onclick="calculadoraM.cierraParentesis()" />
+            
+            
+            
+           
+
+            <input type="submit" value="submit"  />
+        </form>
+    
+
+
+</body> 

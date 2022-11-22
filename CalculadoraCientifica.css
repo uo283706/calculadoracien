@@ -1,0 +1,139 @@
+/**********************************************
+    Sara L. - UO283706
+    Descripcion de los estilos
+    Estilo para la página principal del sitio web
+**********************************************/
+body {
+    display: grid;
+    width: 40vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    background-color: rgb(240, 193, 132);
+    color:black;
+    justify-self: center;
+}
+
+
+
+/*Selector Specificity: (0, 0, 1)*/
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        border-radius: 1.2em;
+        
+       justify-self: center;
+
+}
+/*Selector Specificity: (0, 0, 1)*/
+h1 {
+    text-transform: uppercase;
+    text-align: left;
+    color:  black;
+    background-color: rgb(240, 193, 132);
+    font-size: 2em;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+
+
+/*Selector Specificity: (0, 0, 1)*/
+label {
+    color: rgb(255, 255, 255);
+    
+    background-color: rgba(248, 248, 248, 0);
+    grid-column: span 4;
+    
+    text-align: center;
+    
+}
+
+/*Selector Specificity: (0, 1, 1)*/
+input[type=submit]  {
+    
+    visibility: hidden;
+    
+    
+}
+
+/*Selector Specificity: (0, 1, 1)*/
+input[type=button]  {
+    color:black;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    margin: 30%;
+    border-radius: 5%;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    
+    
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "/"]{
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "*"]{
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "+"]{
+    /*grid-column: span 2;*/
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "-"]{
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "mrc"]{
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "m-"]{
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 2, 1)*/
+input[type=button][ value = "m+"]{
+    background-color: aqua;
+    color:black;
+}
+
+/*Selector Specificity: (0, 1, 1)*/
+input[type=text] {
+    grid-column: span 4;
+    color: black;
+    background-color: rgb(138, 235, 118);
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 28vw;
+    text-align: left;
+    margin: 2vw;
+    font-size: 3vw;
+    justify-self: center;
+}
+
+@media only screen and (min-width: 25em) {
+/*Selector Specificity: (0, 0, 1)*/
+    form {
+        background-color: purple;
+        color:rgb(255, 255, 255);
+        
+    }
+}
